@@ -1,16 +1,17 @@
 import cors from "cors";
 import express, { json } from "express";
-import connectToMongoDb from "./src/connectToMongoDb/connectToMongoDb.js";
-import { errorMiddleware } from "./src/middleware/errorMiddleware.js";
-import productRouter from "./src/route/productRouter.js";
-import reviewRouter from "./src/route/reviewRouter.js";
-import userRouter from "./src/route/userRouter.js";
-import fileRouter from "./src/route/fileRouter.js";
+import connectToMongoDb from "./src/connectToMongoDb/connectToMongoDb";
+import { errorMiddleware } from "./src/middleware/errorMiddleware";
+import productRouter from "./src/route/productRouter";
+import reviewRouter from "./src/route/reviewRouter";
+import userRouter from "./src/route/userRouter";
+import fileRouter from "./src/route/fileRouter";
 
 const app = express();
 app.use(express.static("./public")); //All file are placed in static folder
 app.use(cors());
 app.use(json());
+app.use()
 
 const port = process.env.PORT || 8000;
 app.listen(port, () => {
