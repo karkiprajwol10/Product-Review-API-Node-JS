@@ -3,9 +3,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "type": "module",
-  "_moduleAliases": {
-  "@route": "./src/route"
-},
+
 
   "scripts": {
     "start": "nodemon index.js",
@@ -14,7 +12,7 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "description": "My webpack project",
+  "description": "My  project",
   "dependencies": {
     "bcrypt": "^5.1.1",
     "cors": "^2.8.5",
@@ -28,9 +26,7 @@
     "mongoose": "^8.5.2",
     "multer": "^1.4.5-lts.1",
     "nodemailer": "^6.9.14"
-  },
-  "devDependencies": {
-    "webpack": "^5.93.0",
-    "webpack-cli": "^5.1.4"
   }
+  
 }
+
