@@ -1,7 +1,4 @@
-
-
 import { Product } from "../schema/model.js";
-
 
 export const createProductService = async (req) => {
   return await Product.create(req.body);

@@ -1,11 +1,6 @@
 import expressAsyncHandler from "express-async-handler";
-import {
-  createProductService,
-  deleteProductService,
-  readAllProductService,
-  readSpecificProductService,
-  updateProductService,
-} from "../service/productService.js";
+import { createProductService, deleteProductService, readAllProductService, readSpecificProductService, updateProductService } from "../service/productService.js";
+
 
 export let createProductController = expressAsyncHandler(
   async (req, res, next) => {
